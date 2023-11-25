@@ -33,35 +33,35 @@ const links = [
     }
 
   ]},
-  {name:"Video",
-  submenu:true,
-  sublinks:[
-    {
-      Head:"Head1",
-      Mysublink:[
-        {name:"Title1", link:"/"},
-        {name:"Title2", link:"/"},
-        {name:"Title3", link:"/"}
-      ]
-    },
-    {
-      Head:"Head2",
-      Mysublink:[
-        {name:"Title1", link:"/"},
-        {name:"Title2", link:"/"},
-        {name:"Title3", link:"/"}
-      ]
-    },
-    {
-      Head:"Head3",
-      Mysublink:[
-        {name:"Title1", link:"/"},
-        {name:"Title2", link:"/"},
-        {name:"Title3", link:"/"}
-      ]
-    }
+  // {name:"Video",
+  // submenu:true,
+  // sublinks:[
+  //   {
+  //     Head:"Head1",
+  //     Mysublink:[
+  //       {name:"Title1", link:"/"},
+  //       {name:"Title2", link:"/"},
+  //       {name:"Title3", link:"/"}
+  //     ]
+  //   },
+  //   {
+  //     Head:"Head2",
+  //     Mysublink:[
+  //       {name:"Title1", link:"/"},
+  //       {name:"Title2", link:"/"},
+  //       {name:"Title3", link:"/"}
+  //     ]
+  //   },
+  //   {
+  //     Head:"Head3",
+  //     Mysublink:[
+  //       {name:"Title1", link:"/"},
+  //       {name:"Title2", link:"/"},
+  //       {name:"Title3", link:"/"}
+  //     ]
+  //   }
 
-  ]},
+  // ]},
  
 ]
 function NavbarLink() {
@@ -73,7 +73,7 @@ function NavbarLink() {
   {links.map((link,linkIndex)=>(
     <div key={linkIndex}>
       <div className='px-3 text-left md:cursor-pointer group'>
-        <h2 className='py-5 flex justify-between items-center md:pr-0 pr-5 group' onClick={()=> {open !== link.name ? setOpen(link.name):setOpen(''); setOpensubMenu('')}}>
+        <h2 className='py-5 flex justify-between items-center md:pr-0 pr-5 group hover:text-green-400 active:text-red-400 focus:text-[#FF0000]' onClick={()=> {open !== link.name ? setOpen(link.name):setOpen(''); setOpensubMenu('')}}>
           {link.name}
           <span className='text-xl md:hidden inline'>
            {open === link.name ? <KeyboardArrowUpIcon/> : <KeyboardArrowDownIcon/>}

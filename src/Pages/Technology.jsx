@@ -10,6 +10,8 @@ import Html from "../Image/html.png";
 import TailwindCss from "../Image/Tailwind.png";
 import JavaScript from "../Image/JS.png";
 import MongoDb from "../Image/MongoDB.png";
+import "../Style/Technology.css";
+import { Typography } from '@mui/material';
 
 
 const Item = styled.div`
@@ -98,7 +100,7 @@ function Technology() {
                 backgroundSize: 'cover',
               }}
             />
-            <div className="h-[200px] w-full rounded-b-2xl bg-white">
+            <div className="h-[250px] w-full rounded-b-2xl bg-white">
               <div className="mt-[-36px] absolute">
                 <img alt="ima" src={item.logo} style={{fontSize:"30px"}} />
               </div>
@@ -111,7 +113,7 @@ function Technology() {
                 </h3>
               </div>
               <div className='w-full p-5 mt-[-14px]'>
-                <h5>{item.description}</h5>
+                <h6>{item.description}</h6>
               </div>
             </div>
 

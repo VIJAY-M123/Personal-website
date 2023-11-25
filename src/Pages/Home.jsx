@@ -1,33 +1,51 @@
 import { Card, Grid, Typography } from '@mui/material'
 import React from 'react'
-import Img from "../Image/img2.jpg"
 import Technology from './Technology';
 import About from './About';
+import Profile from "../Image/Profile.png";
+//import bg from "../Image/img2.jpg"
 
 function Home() {
 
-  const cardStyle = {
-    backgroundImage: `url(${Img})`,
-    backgroundSize: 'cover', // You can adjust these styles as needed
-    // backgroundPosition: 'center',
-    // width: '100%', // Set the width to 100% if you want it to cover the entire Card
-    // height: '100%', // Set the height to 100% if you want it to cover the entire Card
-  };
+  
   return (
     <>
      <div className='h-screen w-full bg-zinc-200'>
-      <div className='pt-24'>
-      <Grid container spacing={2}>
-       <Grid item xs={12} lg={6}>
-        <Typography>hIII</Typography>
+      <div className='pt-24 w-full h-[350px] bg-gradient-to-r from-blue-600 to-blue-900'>
+      </div>
+      <div className='pl-10 pr-10 lg:pl-24 lg:pr-24'>
+      <Grid container spacing={4}>
+       <Grid item xs={12} lg={8} xl={9} className='hidden lg:flex xl:flex'> 
+       {/* <Card className='h-[300px] w-full'  style={{
+                backgroundImage: `url(${bg})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+              }}>
+
+       </Card> */}
+       <div className='flex flex-col items-start justify-center'>
+        <h2 className='text-[40px]'>Hii...</h2>
+        <p className='text-[20px] font-normal'>I'm a software engineer with expertise designing 
+          Web Applications and Mobile Apps using JavaScript/ReactJs/React Native/NodeJs, 
+          as well as several other great libraries and frameworks.</p>
+       </div>
        </Grid>
-       <Grid item xs={12} lg={6}>
-        <Card className='h-98' style={cardStyle}>
-          
+       <Grid item xs={12} lg={4} xl={3}>
+        <Card className='mt-[-74px] lg:mt-[-44px] flex items-center flex-col p-8'>
+         
+          <div className='h-36 w-36 mt-[-100px] absolute'>
+           <img src={Profile} alt='profile.png' className='rounded-full'/>
+          </div>
+          <Typography sx={{marginTop:"60px",fontWeight:"bold",fontSize:"30px"}}>Vijayaraj M</Typography>
+          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>B-TECH(IT)</Typography>
+          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>Senior Software Developer</Typography>
+          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>Aggrandize Venture Pvt Ltd</Typography>
+          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>Vijayaraj </Typography>
         </Card>
        </Grid>
       </Grid>
       </div>
+      
     </div>
     <Technology/>
     <About/>

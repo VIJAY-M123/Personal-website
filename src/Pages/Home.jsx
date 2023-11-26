@@ -12,7 +12,7 @@ function Home() {
   
   return (
     <>
-     <div className='h-screen w-full bg-zinc-200'>
+     <div className='h-auto w-full bg-zinc-200 md:h-screen'>
       <div className='pt-24 w-full h-[350px]' style={{
                 backgroundImage: `url(${backgroundImage})`,
                 backgroundRepeat: 'no-repeat',

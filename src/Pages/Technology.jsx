@@ -87,8 +87,9 @@ function Technology() {
         { width: 1200, itemsToShow: 4 },
     ];
   return (
-    <div className='h-2/3 w-full bg-gray-200 p-8'>
-        <Carousel breakPoints={breakPoints} className="">
+    <div className='h-2/3 w-full bg-gray-200 p-8 pt-24'>
+        <Typography variant='h5' fontWeight="bold" className='flex items-center justify-center font-bold' style={{ marginBottom: '25px' }}>Technology</Typography>
+        <Carousel breakPoints={breakPoints}>
           {card.map((item, index)=>(
             <Item key={index}>
 

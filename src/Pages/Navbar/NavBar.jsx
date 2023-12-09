@@ -7,7 +7,7 @@ import { Button } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
-function NavBar1() {
+function NavBar() {
   const [open,setOpen] = useState(false);
 
   const { pathname } = useLocation();
@@ -59,22 +59,22 @@ function NavBar1() {
           <li className='flex flex-col'>
             <Link to="/home" className={`py-3 px-3 inline-block hover:text-green-400 focus:text-[#FF0000] ${
           pathname === '/home' ? 'text-[#FF0000]' : ''
-        }`}>Home</Link>
+        }`} onClick={()=>setOpen(false)}>Home</Link>
             <Link to="/skills" className={`py-3 px-3 inline-block hover:text-green-400 active:text-red-400 focus:text-[#FF0000] ${
           pathname === '/skills' ? 'text-[#FF0000]' : ''
-        }`}>Skills</Link>
+        }`} onClick={()=>setOpen(false)}>Skills</Link>
             <Link to="/experience" className={`py-3 px-3 inline-block hover:text-green-400 focus:text-[#FF0000] ${
           pathname === '/experience' ? 'text-[#FF0000]' : ''
-        }`}>Work Experience</Link>
+        }`} onClick={()=>setOpen(false)}>Work Experience</Link>
             <Link to="/image" className={`py-3 px-3 inline-block hover:text-green-400 focus:text-[#FF0000] ${
           pathname === '/image' ? 'text-[#FF0000]' : ''
-        }`}>Image</Link>
+        }`} onClick={()=>setOpen(false)}>Image</Link>
           </li>
           {/* <NavbarLink/> */}
           <li className='flex flex-col'>
             <Link to="/about" className={`py-3 px-3 inline-block hover:text-green-400 active:text-red-400 focus:text-[#FF0000] ${
           pathname === '/about' ? 'text-[#FF0000]' : ''
-        }`}>About</Link>
+        }`} onClick={()=>setOpen(false)}>About</Link>
           </li>
           <div className='py-5 '>
         <Button variant="outlined">LOGIN</Button>
@@ -87,4 +87,4 @@ function NavBar1() {
   )
 }
 
-export default NavBar1
+export default NavBar

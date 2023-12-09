@@ -36,9 +36,13 @@ function About() {
            <Grid item xs={12} md={4} lg={4}>
              <Typography sx={{fontSize:"20px"}}>Follow On Us</Typography>
              <div className='p-5 flex flex-between'>
-             <FacebookIcon/>
+             <FacebookIcon onClick={() => {
+              window.open('https://www.facebook.com/profile.php?id=100038116292187/', '_blank');
+            }}/>
              <InstagramIcon/>
-             <LinkedInIcon/>
+             <LinkedInIcon onClick={() => {
+              window.open('https://www.linkedin.com/in/vijayaraj-m-037706292/', '_blank');
+            }}/>
              <TwitterIcon/>
              </div>
            </Grid>

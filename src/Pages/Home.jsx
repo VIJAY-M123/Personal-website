@@ -5,9 +5,11 @@ import About from './About';
 import Profile from "../Image/Profile.png";
 import backgroundImage from '../Image/backgroundImage.jpg';
 import Service from './Service';
+import { motion } from 'framer-motion';
 //import bg from "../Image/img2.jpg"
 
 function Home() {
+ 
 
   
   return (
@@ -22,19 +24,24 @@ function Home() {
       <div className='pl-10 pr-10 lg:pl-24 lg:pr-24'>
       <Grid container spacing={4}>
       <Grid item xs={12} lg={4} xl={3}>
-        <Card className='mt-[-74px] lg:mt-[-44px] flex items-center flex-col p-8'>
+        <Card className='mt-[-74px] lg:mt-[-44px] flex items-center flex-col p-8' component={motion.div}
+                  initial={{ x: -500 }}
+                  animate={{ x:0 }}
+                  transition={{ duration: 0.9, bounceDamping: 0 }}>
          
           <div className='h-36 w-36 mt-[-100px] absolute'>
            <img src={Profile} alt='profile.png' className='rounded-full'/>
           </div>
           <Typography sx={{marginTop:"60px",fontWeight:"bold",fontSize:"30px"}}>Vijayaraj M</Typography>
           <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>B-TECH(IT)</Typography>
-          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>Senior Software Developer</Typography>
-          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>Aggrandize Venture Pvt Ltd</Typography>
-          {/* <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>Vijayaraj </Typography> */}
+          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>Software Developer</Typography>
+          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>3 Years Experience</Typography>
         </Card>
        </Grid>
-       <Grid item xs={12} lg={8} xl={9} className=''> 
+       <Grid item xs={12} lg={8} xl={9} className='' component={motion.div}
+                  initial={{ x: 500 }}
+                  animate={{ x: 0 }}
+                  transition={{ duration: 0.9, bounceDamping: 0 }}> 
        {/* <Card className='h-[300px] w-full'  style={{
                 backgroundImage: `url(${bg})`,
                 backgroundRepeat: 'no-repeat',

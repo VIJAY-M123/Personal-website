@@ -4,6 +4,7 @@ import ServiveImage from "../Image/Service.jpg";
 import DesktopMacTwoToneIcon from '@mui/icons-material/DesktopMacTwoTone';
 import PhoneAndroidTwoToneIcon from '@mui/icons-material/PhoneAndroidTwoTone';
 import DnsTwoToneIcon from '@mui/icons-material/DnsTwoTone';
+import { motion } from 'framer-motion';
 
 function Service() {
   return (
@@ -15,7 +16,7 @@ function Service() {
            <Grid item xs={12} md={6} className='flex'>
                <Grid container spacing={4}>
                   <Grid item xs={12}>
-                    <Card>
+                    <Card component={motion.div} initial={{x:500}} animate={{x:0}} transition={{ duration: 0.9, bounceDamping: 0 }}>
                         <CardContent>
                         <div className='flex gap-6'>
                         <div className='flex items-center justify-center'>
@@ -36,7 +37,7 @@ function Service() {
                      
                   </Grid>
                   <Grid item xs={12}>
-                    <Card>
+                    <Card component={motion.div} initial={{x:-500}} animate={{x:0}} transition={{ duration: 0.9, bounceDamping: 0 }}>
                         <CardContent>
                         <div className='flex gap-6'>
                         <div className='flex items-center justify-center'>
@@ -57,7 +58,7 @@ function Service() {
                      
                   </Grid>
                   <Grid item xs={12}>
-                    <Card>
+                    <Card component={motion.div} initial={{x:500}} animate={{x:0}} transition={{ duration: 0.9, bounceDamping: 0 }}>
                         <CardContent>
                         <div className='flex gap-6'>
                         <div className='flex items-center justify-center'>

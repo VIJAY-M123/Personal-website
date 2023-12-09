@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
 import Home from '../Home'
-import NavBar1 from './NavBar1'
+import NavBar from './NavBar'
 import About from '../About'
 import Image from '../Image'
 import WorkExperience from '../Work Experience'
@@ -10,7 +10,7 @@ import Technology from '../Technology'
 function NavbarIndex() {
   return (
   <>
-  <NavBar1/>
+  <NavBar/>
   
   <Routes>
   <Route path="/" element={<Home/>}/> 

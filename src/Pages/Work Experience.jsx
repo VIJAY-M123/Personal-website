@@ -83,8 +83,8 @@ function WorkExperience() {
                 <Grid container spacing={2}>
                 
                  <Grid item sx={12} md={6} >
-                   <Typography variant='h4' sx={{fontWeight:"bold"}}>Call Campaign</Typography>
-                   <p className='mt-5'>If your primary business goal is to get phone calls to your business, create call campaigns. Call campaigns allow you to focus on getting more calls straight from your ads. With these campaigns, you can use CPC bidding based on the value of a call to your business</p>
+                   <Typography variant='h4' sx={{fontWeight:"bold"}}>Social Campaign</Typography>
+                   <p className='mt-5'>A social media campaign is a coordinated marketing effort to reinforce or assist with a business goal using one or more social media platforms. Campaigns differ from everyday social media efforts because of their increased focus, targeting and measurability</p>
                    <img className='mt-3 rounded-[15px]' src={SocialCampaign} height={600} width={600} alt='email.jpg'/>
                  </Grid>
                  <Grid item sx={12} md={6} className='flex justify-center'>

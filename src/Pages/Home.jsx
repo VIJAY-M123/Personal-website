@@ -38,7 +38,7 @@ function Home() {
           <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>3 Years Experience</Typography>
         </Card>
        </Grid>
-       <Grid item xs={12} lg={8} xl={9} className='' component={motion.div}
+       <Grid item xs={12} lg={8} xl={9} component={motion.div}
                   initial={{ x: 500 }}
                   animate={{ x: 0 }}
                   transition={{ duration: 0.9, bounceDamping: 0 }}> 

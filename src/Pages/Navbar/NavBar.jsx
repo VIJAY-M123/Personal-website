@@ -17,6 +17,8 @@ function NavBar() {
     localStorage.setItem('activeLink', pathname);
   }, [pathname]);
 
+  const defaultPath = pathname ? pathname : '/home';
+
   return (
     <nav className='bg-gray-200 fixed w-full z-20'>
       <div className='flex items-center justify-around font-medium'>
@@ -30,7 +32,7 @@ function NavBar() {
         <ul className='md:flex hidden uppercase items-center gap-2'>
           <li>
             <Link to="/home" className={`py-7 px-3 inline-block hover:text-green-400 focus:text-[#FF0000] ${
-          pathname === '/home' ? 'text-[#FF0000]' : ''
+          defaultPath === '/home' ? 'text-[#FF0000]' : ''
         }`}>Home</Link>
             <Link to="/skills" className={`py-7 px-3 inline-block hover:text-green-400 focus:text-[#FF0000]  ${
           pathname === '/skills' ? 'text-[#FF0000]' : ''
@@ -58,7 +60,7 @@ function NavBar() {
         <ul className={`md:hidden fixed h-full w-full bg-gray-300 bottom-0 py-0 pl-4 duration-500 top-[76px] ${open ? "left-0":"left-[-100%]"}`}>
           <li className='flex flex-col'>
             <Link to="/home" className={`py-3 px-3 inline-block hover:text-green-400 focus:text-[#FF0000] ${
-          pathname === '/home' ? 'text-[#FF0000]' : ''
+          defaultPath === '/home' ? 'text-[#FF0000]' : ''
         }`} onClick={()=>setOpen(false)}>Home</Link>
             <Link to="/skills" className={`py-3 px-3 inline-block hover:text-green-400 active:text-red-400 focus:text-[#FF0000] ${
           pathname === '/skills' ? 'text-[#FF0000]' : ''

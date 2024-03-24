@@ -14,7 +14,7 @@ function About() {
            <Grid item xs={12} md={4} lg={4}>
              <Typography sx={{fontSize:"20px"}}>Address</Typography>
              <div className='mt-5 ml-16'>
-              <Typography>Ms.Kavalathi Muthuraman</Typography>
+              <Typography>Ms.Kalavathi Muthuraman</Typography>
               <Typography>7/14 North Street,</Typography>
               <Typography>Thiruvenkadapuram,</Typography>
               <Typography>Theripanani-600702</Typography>

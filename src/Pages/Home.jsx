@@ -1,20 +1,22 @@
-import { Card, Grid, Typography } from '@mui/material'
+import { Button, Card, Grid, Typography } from '@mui/material'
 import React from 'react'
 import Technology from './Technology';
 import About from './About';
-import Profile from "../Image/Profile.png";
+import Profile from "../Image/developer-profile.jpg";
 import backgroundImage from '../Image/backgroundImage.jpg';
 import Service from './Service';
 import { motion } from 'framer-motion';
-//import bg from "../Image/img2.jpg"
+import AnimatedText from "../Components/AnimatedText";
+import Experience from '../Components/Experience';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import Resume from "../Image/Resume.pdf";
+
 
 function Home() {
  
-
-  
   return (
     <>
-     <div className='h-auto w-full bg-zinc-200 md:h-screen'>
+    <div className='h-auto w-full bg-zinc-200 lg:h-screen pb-11'>
       <div className='pt-24 w-full h-[350px]' style={{
                 backgroundImage: `url(${backgroundImage})`,
                 backgroundRepeat: 'no-repeat',
@@ -29,13 +31,13 @@ function Home() {
                   animate={{ x:0 }}
                   transition={{ duration: 0.9, bounceDamping: 0 }}>
          
-          <div className='h-36 w-36 mt-[-100px] absolute'>
+          <div className='h-40 w-40 mt-[-120px] absolute'>
            <img src={Profile} alt='profile.png' className='rounded-full'/>
           </div>
           <Typography sx={{marginTop:"60px",fontWeight:"bold",fontSize:"30px"}}>Vijayaraj M</Typography>
-          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>B-TECH(IT)</Typography>
-          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>Software Developer</Typography>
-          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>3 Years Experience</Typography>
+          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"18px"}}>Aggrandize venture Pvt Ltd</Typography>
+          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>Senior Software Developer</Typography>
+          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>4 Years Experience</Typography>
         </Card>
        </Grid>
        <Grid item xs={12} lg={8} xl={9} component={motion.div}
@@ -50,19 +52,26 @@ function Home() {
 
        </Card> */}
        <div className='flex flex-col items-start justify-center'>
-        <h2 className='text-[40px]'>Hii...</h2>
+       <AnimatedText text="Turning Vision Into Reality With Code And Design" className="text-4xl md:text-6xl"/>
         <p className='text-[20px] font-normal'>I'm a software engineer with expertise designing 
           Web Applications and Mobile Apps using JavaScript/ReactJs/React Native/NodeJs, 
           as well as several other great libraries and frameworks.</p>
+       </div>
+       <div className='w-full flex justify-center items-center gap-10 mt-10'>
+        <Button className="rounded-md  text-white hover:text-black hover:bg-gray-200"             
+          variant="contained" endIcon={<OpenInNewIcon/>} href={Resume} download={true}>Resume</Button>
+          <Button className="rounded-md  text-white hover:text-black hover:bg-gray-200"             
+          variant="outlined" endIcon={<OpenInNewIcon/>}>Contact</Button>
        </div>
        </Grid>
       
       </Grid>
       </div>
-      
     </div>
     <Service/>
+    <Experience/>
     <Technology/>
+    {/* <Skills/> */}
     <About/>
     </>
    

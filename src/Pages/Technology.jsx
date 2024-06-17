@@ -10,6 +10,9 @@ import Html from "../Image/html.png";
 import TailwindCss from "../Image/Tailwind.png";
 import JavaScript from "../Image/JS.png";
 import MongoDb from "../Image/MongoDB.png";
+import NextJs from "../Image/Nextjs.png";
+import MUI from "../Image/MUI.png";
+import Redux from "../Image/redux.png"
 import "../Style/Technology.css";
 import { Typography } from '@mui/material';
 
@@ -28,11 +31,32 @@ margin: 0 15px;
 
 const card = [
   {
+    img:img1,
+    icon:NextJs,
+    logo:logo,
+    title:"Next Js",
+    description:'Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces.',
+  },
+  {
   img:img1,
   icon:ReactImg,
   logo:logo,
   title:"React Js",
   description:'ReactJS is an open-source JavaScript library used to create user interfaces in a declarative and efficient way',
+},
+{
+  img:img1,
+  icon:MUI,
+  logo:logo,
+  title:"MUI",
+  description:' Material UI is an open-source React component library that implements Google Material Design',
+},
+{
+  img:img1,
+  icon:Redux,
+  logo:logo,
+  title:"Redux",
+  description:'Redux is a JS library for predictable and maintainable global state management',
 },
 {
   img:img1,

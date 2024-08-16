@@ -6,6 +6,7 @@ import About from '../About'
 import Image from '../Image'
 import WorkExperience from '../Work Experience'
 import Technology from '../Technology'
+import Experience from '../../Components/Experience'
 
 function NavbarIndex() {
   return (
@@ -17,7 +18,8 @@ function NavbarIndex() {
    <Route path="/home" element={<Home/>}/>
    <Route path="/about" element={<About/>}/>
    <Route path="/image" element={<Image/>}/>
-   <Route path="/experience" element={<WorkExperience/>}/>
+   <Route path="/experience" element={<Experience/>}/>
+   <Route path="/project-experience" element={<WorkExperience/>}/>
    <Route path="/skills" element={<Technology/>}/>
   </Routes>
   </>

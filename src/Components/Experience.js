@@ -36,7 +36,9 @@ const Experience = () => {
         }
     )
     return (
-        <div className='my-10'>
+        <>
+       
+        <div className='pt-24 pb-10'>
             <h2 className='font-bold text-3xl md:text-8xl mb-32 w-full text-center md:mb-16'>
                 Experience
             </h2>
@@ -52,8 +54,8 @@ const Experience = () => {
                     companyLink="https://www.aggrandizeventure.com/"
                     company="Aggrandize Venture Pvt Ltd"
                     time="Aug 2023 - Still Now"
-                    address="Chennai - 600029, Tamil Nadu India"
-                    work="Designed and developed a responsive and user-friendly interface using React.js, enabling users to efficiently manage logistics operations. 	Experienced in managing and executing diverse logistics projects, including Shipping ERP, Custom House Agent, CRM, and NVOCC operations. Demonstrated ability to streamline processes, enhance efficiency, and ensure compliance with industry regulations." />
+                    address="Chennai - 600001, Tamil Nadu India"
+                    work="Designed and developed a responsive and user-friendly interface using React.js, enabling users to efficiently manage logistics operations. Experienced in managing and executing diverse logistics projects, including Shipping ERP, Custom House Agent, CRM, and NVOCC operations. Demonstrated ability to streamline processes, enhance efficiency, and ensure compliance with industry regulations." />
 
                     <Details 
                     position="Associate Software Developer"
@@ -64,24 +66,25 @@ const Experience = () => {
                     work="Identified web-based user interactions and developed highly responsive user interface components via React concepts. Translated design and wireframes into high-quality code and wrote application interface code via JavaScripts following ReactJs workflows
 " />
 
-                    <Details 
+                    {/* <Details 
                     position="Junior Software Developer"
                     companyLink="https://www.bluebase.in/"
                     company="BlueBase Software Solution Pvt Ltd"
                     time="Feb 2021 - Jul 2021"
-                    address="Chennai - 600 119, Tamilnadu, India"
-                    work="Developed native Android applications and frameworks using Java. Defined and implemented robust app architectures and complex user interfaces" />           
+                    address="Chennai - 600032, Tamilnadu, India"
+                    work="Developed native Android applications and frameworks using Java. Defined and implemented robust app architectures and complex user interfaces" />            */}
 
                     <Details 
                     position="Intern Software Developer"
                     companyLink="https://shiash.com/"
-                    company="Shi#sh Info Solution"
+                    company="Shi#ash Info Solution"
                     time="Nev 2020 - Jan 2021"
-                    address="Chennai - 600 119, Tamilnadu, India"
+                    address="Chennai - 600119, Tamilnadu, India"
                     work="Java developer intern include understanding and learning the function of new computer applications" />
                 </ul>
             </div>
         </div>
+        </>
     )
 }
 

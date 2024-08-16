@@ -39,7 +39,10 @@ function NavBar() {
         }`}>Skills</Link>
             <Link to="/experience" className={`py-7 px-3 inline-block hover:text-green-400 focus:text-[#FF0000]  ${
           pathname === '/experience' ? 'text-[#FF0000]' : ''
-        }`}>Work Experience</Link>
+        }`}>Experience</Link>
+        <Link to="/project-experience" className={`py-7 px-3 inline-block hover:text-green-400 focus:text-[#FF0000]  ${
+          pathname === '/project-experience' ? 'text-[#FF0000]' : ''
+        }`}>Project Experience</Link>
             <Link to="/image" className={`py-7 px-3 inline-block hover:text-green-400 focus:text-[#FF0000]
              ${
               pathname === '/image' ? 'text-[#FF0000]' : ''
@@ -67,7 +70,10 @@ function NavBar() {
         }`} onClick={()=>setOpen(false)}>Skills</Link>
             <Link to="/experience" className={`py-3 px-3 inline-block hover:text-green-400 focus:text-[#FF0000] ${
           pathname === '/experience' ? 'text-[#FF0000]' : ''
-        }`} onClick={()=>setOpen(false)}>Work Experience</Link>
+        }`} onClick={()=>setOpen(false)}>Experience</Link>
+        <Link to="/project-experience" className={`py-3 px-3 inline-block hover:text-green-400 focus:text-[#FF0000] ${
+          pathname === '/project-experience' ? 'text-[#FF0000]' : ''
+        }`} onClick={()=>setOpen(false)}>Project Experience</Link>
             <Link to="/image" className={`py-3 px-3 inline-block hover:text-green-400 focus:text-[#FF0000] ${
           pathname === '/image' ? 'text-[#FF0000]' : ''
         }`} onClick={()=>setOpen(false)}>Image</Link>

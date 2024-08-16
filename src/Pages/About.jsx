@@ -29,7 +29,7 @@ function About() {
               </div>
               <div className='flex flex-row mt-5'>
                 <MailIcon/>
-                <Typography sx={{marginLeft:"10px"}}>vijayarajm.2016@gmail.com</Typography>
+                <Typography sx={{marginLeft:"10px"}}>java7401546493@gmail.com</Typography>
               </div>
              </div>
            </Grid>

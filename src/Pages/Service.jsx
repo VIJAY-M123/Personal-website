@@ -29,7 +29,7 @@ function Service() {
                                 <Typography variant='h6' fontWeight="bold">Web Development</Typography>
                             </div>
                             <div>
-                                <Typography variant='h9'>5 Projects</Typography>
+                                <Typography variant='h9'>10+ Projects</Typography>
                             </div>
                         </div>
                       </div>

@@ -9,7 +9,8 @@ import { motion } from 'framer-motion';
 import AnimatedText from "../Components/AnimatedText";
 import Experience from '../Components/Experience';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import Resume from "../Image/Resume.pdf";
+import Resume from "../Assets/PDF/Vijay.pdf";
+
 
 
 function Home() {
@@ -37,7 +38,7 @@ function Home() {
           <Typography sx={{marginTop:"60px",fontWeight:"bold",fontSize:"30px"}}>Vijayaraj M</Typography>
           <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"18px"}}>Aggrandize venture Pvt Ltd</Typography>
           <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>Senior Software Developer</Typography>
-          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>4 Years Experience</Typography>
+          <Typography sx={{marginTop:"15px",fontWeight:"bold",fontSize:"15px"}}>3+ Years Experience</Typography>
         </Card>
        </Grid>
        <Grid item xs={12} lg={8} xl={9} component={motion.div}
@@ -58,9 +59,15 @@ function Home() {
           as well as several other great libraries and frameworks.</p>
        </div>
        <div className='w-full flex justify-center items-center gap-10 mt-10'>
-        <Button className="rounded-md  text-white hover:text-black hover:bg-gray-200"             
+        <Button sx={{backgroundColor:"#000000",
+            ":hover": {
+                    backgroundColor: "#E0E0E0",
+                    color: "#000000" // Changing text color on hover if needed
+                }}} className="rounded-md  text-white hover:text-black"             
           variant="contained" endIcon={<OpenInNewIcon/>} href={Resume} download={true}>Resume</Button>
-          <Button className="rounded-md  text-white hover:text-black hover:bg-gray-200"             
+          <Button 
+         
+          className="rounded-md  text-white hover:text-blacK"             
           variant="outlined" endIcon={<OpenInNewIcon/>}>Contact</Button>
        </div>
        </Grid>
@@ -71,7 +78,8 @@ function Home() {
     <Service/>
     <Experience/>
     <Technology/>
-    {/* <Skills/> */}
+
+   
     <About/>
     </>
    

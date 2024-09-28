@@ -1,60 +1,165 @@
-import { Grid, Typography } from '@mui/material'
+import { Button, Card,CardContent, Grid, Typography } from '@mui/material'
 import React from 'react'
 import img2 from "../Image/work2.png"
-import Email from "../Image/Email.jpg";
-import Call from "../Image/Call.jpg";
 import CallCampaign from "../Image/CallCampaign.png";
-import SocialCampaign from "../Image/SocialCampaign.png";
-import Social from "../Image/Social.jpg";
+import CHA from "../Image/CHA.jpg";
+import ERP from "../Image/logistics-2.jpg";
+import NVOCC from "../Image/Shpping.jpg";
+import { motion } from 'framer-motion';
+import CRM from "../Image/CRM.jpg";
 
 
 
 function WorkExperience() {
   return (
     <div className='pt-24 pl-6 pr-6'>
-        <Grid container spacing={4}>
+       
+        <Grid container spacing={6}>
           <Grid item xs={12}>
-                <Grid container spacing={2}>
-                 <Grid item xs={12} md={6}>
-                   <Typography variant='h4' sx={{fontWeight:"bold"}}>Email Campaign</Typography>
-                   <p className='mt-5'>Our email marketing platform makes it easy for marketers in any type of business to send professional, engaging marketing emails.  From drag and drop editors to powerful automations and developer APIs, Mailchimp is built to help you sell more—no matter the complexity of your business.</p>
-                   <img className='mt-3 rounded-[15px]' src={img2} height={600} width={600} alt='email.jpg'/>
-                 </Grid>
-                 <Grid item xs={12} md={6} className='flex justify-center'>
-                   <img src={Email} height={550} width={550} alt='email.jpg'/>
-                 </Grid>
+          <Card style={{border:"solid 1px",boxShadow:"8px 8px #000000", borderRadius:"20px"}}>
+            <CardContent>
+              <Grid container spacing={4}>
+                <Grid  item xs={12} md={6} component={motion.div} whileHover={{scale:1.02}} transition={{duration:0.2}}>
+                <img className='mt-3 rounded-[15px] w-full h-[350px]' src={CHA}  alt='email.jpg'/>
                 </Grid>
-          </Grid>
-          <Grid item xs={12} >
-                <Grid container spacing={2}>
-                <Grid item xs={12} md={6} className='flex justify-center'>
-                   <img src={Call} height={550} width={550} alt='email.jpg'/>
-                 </Grid>
-                 <Grid item xs={12} md={6} >
-                   <Typography variant='h4' sx={{fontWeight:"bold"}}>Call Campaign</Typography>
-                   <p className='mt-5'>If your primary business goal is to get phone calls to your business, create call campaigns. Call campaigns allow you to focus on getting more calls straight from your ads. With these campaigns, you can use CPC bidding based on the value of a call to your business</p>
-                   <img className='mt-3 rounded-[15px]' src={CallCampaign} height={600} width={600} alt='email.jpg'/>
-                 </Grid>
-                
-                
+                <Grid item xs={12} md={6}>
+                  <Typography sx={{fontSize:"30px",fontWeight:700,marginBottom:"20px"}} className='w-full'>Custom Clearance</Typography>
+                  <Typography sx={{fontWeight:500,marginBottom:"20px"}} className='w-full'>Customs clearance is the process of clearing goods for import or export through customs. It's a mandatory step that involves a series of documentation and regulatory requirements to ensure compliance with local and international laws</Typography>
+                  <Button sx={{backgroundColor:"#000000",
+                     ":   hover": {
+                    backgroundColor: "#E0E0E0",
+                    color: "#000000",
+                    }}}  variant='contained'>Visit Project</Button>
                 </Grid>
+              </Grid>
+            </CardContent>
+          </Card>
           </Grid>
-          <Grid item xs={12} >
-                <Grid container spacing={2}>
-                
-                 <Grid item xs={12} md={6} >
-                   <Typography variant='h4' sx={{fontWeight:"bold"}}>Social Campaign</Typography>
-                   <p className='mt-5'>A social media campaign is a coordinated marketing effort to reinforce or assist with a business goal using one or more social media platforms. Campaigns differ from everyday social media efforts because of their increased focus, targeting and measurability</p>
-                   <img className='mt-3 rounded-[15px]' src={SocialCampaign} height={600} width={600} alt='email.jpg'/>
-                 </Grid>
-                 <Grid item xs={12} md={6} className='flex justify-center'>
-                   <img src={Social} height={550} width={550} alt='email.jpg'/>
-                 </Grid>
-                
+          <Grid item xs={12} md={6}>
+          <Card style={{border:"solid 1px",boxShadow:"8px 8px #000000", borderRadius:"20px"}}>
+            <CardContent>
+              <Grid container spacing={2}>
+                <Grid item xs={12}  component={motion.div} whileHover={{scale:1.02}} transition={{duration:0.2}}>
+                <img className='rounded-[15px]' src={ERP} alt='email.jpg'/>
+                </Grid> 
+                <Grid item xs={12}>
+                <Typography  sx={{fontWeight:700,fontSize:"30px"}}>Shipping ERP</Typography>
+                <Typography  sx={{fontWeight:700,fontSize:"12px",marginTop:"10px"}}>ERP in Logistics</Typography>
+                <Button sx={{backgroundColor:"#000000",
+                    marginTop:"10px",
+                     ":   hover": {
+                    backgroundColor: "#E0E0E0",
+                    color: "#000000",
+                    }}}  variant='contained'>Visit</Button>
+                </Grid> 
+              </Grid>
+            </CardContent>
+          </Card>
+          </Grid>
+          <Grid item xs={12} md={6}>
+          <Card style={{border:"solid 1px",boxShadow:"8px 8px #000000", borderRadius:"20px"}}>
+            <CardContent>
+              <Grid container spacing={2}>
+                <Grid  item xs={12}  component={motion.div} whileHover={{scale:1.02}} transition={{duration:0.2}}>
+                <img style={{height:370}} className='rounded-[15px]' src={NVOCC} alt='email.jpg'/>
+                </Grid> 
+                <Grid item xs={12}>
+                <Typography  sx={{fontWeight:700,fontSize:"30px"}}>NVOCC</Typography>
+                <Typography  sx={{fontWeight:700,fontSize:"12px",marginTop:"10px"}}>Transportation Services</Typography>
+                <Button sx={{backgroundColor:"#000000",
+                    marginTop:"10px",
+                     ":   hover": {
+                    backgroundColor: "#E0E0E0",
+                    color: "#000000",
+                    }}}  variant='contained'>Visit</Button>
+                </Grid> 
+              </Grid>
+            </CardContent>
+          </Card>
+          </Grid>
+          <Grid item xs={12}>
+          <Card style={{border:"solid 1px",boxShadow:"8px 8px #000000", borderRadius:"20px"}}>
+            <CardContent>
+              <Grid container spacing={4}>
+                <Grid  item xs={12} md={6} component={motion.div} whileHover={{scale:1.02}} transition={{duration:0.2}}>
+                <img className='mt-3 rounded-[15px] w-full h-[350px]' src={CRM}  alt='email.jpg'/>
                 </Grid>
+                <Grid item xs={12} md={6}>
+                  <Typography sx={{fontSize:"30px",fontWeight:700,marginBottom:"20px"}} className='w-full'>CRM</Typography>
+                  <Typography sx={{fontWeight:500,marginBottom:"20px"}} className='w-full'>Customer Relationship Management is a system that helps businesses manage their interactions with customers. The goal of CRM is to improve customer relationships and grow a business.</Typography>
+                  <Button sx={{backgroundColor:"#000000",
+                     ":   hover": {
+                    backgroundColor: "#E0E0E0",
+                    color: "#000000",
+                    }}}  variant='contained'>Visit Project</Button>
+                </Grid>
+              </Grid>
+            </CardContent>
+          </Card>
           </Grid>
+          <Grid item xs={12}>
+          <Card style={{border:"solid 1px",boxShadow:"8px 8px #000000", borderRadius:"20px"}}>
+            <CardContent>
+              <Grid container spacing={4}>
+                <Grid style={{display:"flex", justifyContent:"center"}} item xs={12} md={6} component={motion.div} whileHover={{scale:1.02}} transition={{duration:0.2}}>
+                <img className='mt-3 rounded-[15px] w-full h-[300px]' src={img2} alt='email.jpg'/>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                  <Typography sx={{fontSize:"30px",fontWeight:700,marginBottom:"20px"}} className='w-full'>Email Campaign</Typography>
+                  <Typography sx={{fontWeight:500,marginBottom:"20px"}} className='w-full'>Our email marketing platform makes it easy for marketers in any type of business to send professional, engaging marketing emails.  From drag and drop editors to powerful automations and developer APIs, Mailchimp is built to help you sell more—no matter the complexity of your business</Typography>
+                  <Button sx={{backgroundColor:"#000000",
+                     ":   hover": {
+                    backgroundColor: "#E0E0E0",
+                    color: "#000000",
           
-
+                    }}}  variant='contained'>Visit Project</Button>
+                </Grid>
+              </Grid>
+            </CardContent>
+          </Card>
+          </Grid>
+          <Grid item xs={12} md={6}>
+          <Card style={{border:"solid 1px",boxShadow:"8px 8px #000000", borderRadius:"20px"}}>
+            <CardContent>
+              <Grid container spacing={2}>
+                <Grid item xs={12}  component={motion.div} whileHover={{scale:1.02}} transition={{duration:0.2}}>
+                <img className='rounded-[15px]' src={CallCampaign} alt='email.jpg'/>
+                </Grid> 
+                <Grid item xs={12}>
+                <Typography  sx={{fontWeight:700,fontSize:"30px"}}>Call Campaign</Typography>
+                <Typography  sx={{fontWeight:700,fontSize:"12px",marginTop:"10px"}}>Call Tracking Report</Typography>
+                <Button sx={{backgroundColor:"#000000",
+                    marginTop:"10px",
+                     ":   hover": {
+                    backgroundColor: "#E0E0E0",
+                    color: "#000000",
+                    }}}  variant='contained'>Visit</Button>
+                </Grid> 
+              </Grid>
+            </CardContent>
+          </Card>
+          </Grid>
+          <Grid item xs={12} md={6}>
+          <Card style={{border:"solid 1px",boxShadow:"8px 8px #000000", borderRadius:"20px"}}>
+            <CardContent>
+              <Grid container spacing={2}>
+                <Grid item xs={12}  component={motion.div} whileHover={{scale:1.02}} transition={{duration:0.2}}>
+                <img className='rounded-[15px]' src={CallCampaign} alt='email.jpg'/>
+                </Grid> 
+                <Grid item xs={12}>
+                <Typography  sx={{fontWeight:700,fontSize:"30px"}}>Social Campaign</Typography>
+                <Typography  sx={{fontWeight:700,fontSize:"12px",marginTop:"10px"}}>Social Media Tracking Report</Typography>
+                <Button sx={{backgroundColor:"#000000",
+                    marginTop:"10px",
+                     ":   hover": {
+                    backgroundColor: "#E0E0E0",
+                    color: "#000000",
+                    }}}  variant='contained'>Visit</Button>
+                </Grid> 
+              </Grid>
+            </CardContent>
+          </Card>
+          </Grid>
         </Grid>
         </div>
   )

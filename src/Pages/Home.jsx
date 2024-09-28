@@ -10,6 +10,7 @@ import AnimatedText from "../Components/AnimatedText";
 import Experience from '../Components/Experience';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import Resume from "../Assets/PDF/Vijay.pdf";
+import Review from './Review';
 
 
 
@@ -17,7 +18,7 @@ function Home() {
  
   return (
     <>
-    <div className='h-auto w-full bg-zinc-200 lg:h-screen pb-11'>
+    <div className='h-auto w-full bg-zinc-200  pb-11'>
       <div className='pt-24 w-full h-[350px]' style={{
                 backgroundImage: `url(${backgroundImage})`,
                 backgroundRepeat: 'no-repeat',
@@ -78,8 +79,7 @@ function Home() {
     <Service/>
     <Experience/>
     <Technology/>
-
-   
+    <Review/>
     <About/>
     </>
    

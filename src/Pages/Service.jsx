@@ -18,7 +18,7 @@ function Service() {
            <Grid item xs={12} md={6} className='flex'>
                <Grid container spacing={4}>
                   <Grid item xs={12}>
-                    <Card component={motion.div}  initial={{x:500}} animate={{x:0}} transition={{ duration: 0.9, bounceDamping: 0 }}>
+                    <Card component={motion.div}   animate={{x:0}} initial={{opacity:0,scale:0}} whileInView={{opacity:1,scale:1}} transition={{ duration: 0.9, bounceDamping: 0 }}>
                         <CardContent>
                         <div className='flex gap-6'>
                         <div className='flex items-center justify-center'>
@@ -29,7 +29,7 @@ function Service() {
                                 <Typography variant='h6' fontWeight="bold">Web Development</Typography>
                             </div>
                             <div>
-                                <Typography variant='h9'>10+ Projects</Typography>
+                                <Typography variant='h9'>React Js</Typography>
                             </div>
                         </div>
                       </div>
@@ -39,7 +39,7 @@ function Service() {
                      
                   </Grid>
                   <Grid item xs={12}>
-                    <Card component={motion.div}    initial={{x:-500}} animate={{x:0}} transition={{ duration: 0.9, bounceDamping: 0 }}>
+                    <Card component={motion.div}   animate={{x:0}} initial={{opacity:0,scale:0}} whileInView={{opacity:1,scale:1}} transition={{ duration: 0.9, bounceDamping: 0 }}>
                         <CardContent>
                         <div className='flex gap-6'>
                         <div className='flex items-center justify-center'>
@@ -50,7 +50,7 @@ function Service() {
                                 <Typography variant='h6' fontWeight="bold">Mobile App Development</Typography>
                             </div>
                             <div>
-                                <Typography variant='h9'>1 Projects</Typography>
+                                <Typography variant='h9'>React Native</Typography>
                             </div>
                         </div>
                       </div>
@@ -60,7 +60,7 @@ function Service() {
                      
                   </Grid>
                   <Grid item xs={12}>
-                    <Card component={motion.div}   initial={{x:500}} animate={{x:0}} transition={{ duration: 0.9, bounceDamping: 0 }}>
+                    <Card component={motion.div}   animate={{x:0}} initial={{opacity:0,scale:0}} whileInView={{opacity:1,scale:1}} transition={{ duration: 0.9, bounceDamping: 0 }}>
                         <CardContent>
                         <div className='flex gap-6'>
                         <div className='flex items-center justify-center'>
@@ -71,7 +71,7 @@ function Service() {
                                 <Typography variant='h6' fontWeight="bold">Backend Development</Typography>
                             </div>
                             <div>
-                                <Typography variant='h9'>1 Projects</Typography>
+                                <Typography variant='h9'>Node Js</Typography>
                             </div>
                         </div>
                       </div>
